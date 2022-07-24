@@ -1,0 +1,37 @@
+#MBTI{
+  display: none;
+}
+
+
+.qBox{
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+.answerList{
+  background-color: white;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  border: 0px;
+}
+
+.answerList:hover, .answerList:focus{
+  background-color: pink;
+  color: white;
+}
+
+.status{
+  height: 20px;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.statusBar{
+  height: 100%;
+  background-color: blue;
+  border-radius: 20px;
+}
