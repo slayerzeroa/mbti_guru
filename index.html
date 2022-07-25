@@ -22,6 +22,7 @@
       - pandas
       - paths:
         - ./csv/berkshire_hathaway_inc.csv
+        - ./berkshire_hathaway_inc.csv
     </py-env>
     <!-- pyscript -->
 
@@ -80,10 +81,11 @@
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
           <py-script>
+            print("열받네?")
             import pandas as pd
-            df = pd.read_csv("./csv/berkshire_hathaway_inc.csv")
+            df = pd.read_csv("./berkshire_hathaway_inc.csv")
             portfolio = Element('portfolio')
-            portfolio.write(df)
+            print(df.head())
           </py-script>
         </div>
       </section>
