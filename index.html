@@ -86,6 +86,7 @@
             df = pd.read_csv("./berkshire_hathaway_inc.csv")
             df.columns = df.columns.str.replace(' ', '_')
             del df['Type']
+            df.dropna(axis = 1, how = 'all')
             print(df)
           </py-script>
         </div>
