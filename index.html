@@ -20,6 +20,8 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - pandas
+      - paths:
+        - ./csv/berkshire_hathaway_inc.csv
     </py-env>
     <!-- pyscript -->
 
@@ -79,9 +81,9 @@
         <div class="portfolio">
           <py-script>
             import pandas as pd
-            berkshire = pd.read_csv("./csv/berkshire_hathaway_inc.csv")
+            df = pd.read_csv()
             portfolio = Element('portfolio')
-            portfolio.write(berkshire)
+            portfolio.write(df)
           </py-script>
         </div>
       </section>
