@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="slayerzeroa">
 
+
     <!-- sns share -->
     <meta name="og:url" content="https://mbtiguru.netlify.app" />
     <meta name="og:title" content="MBTI로 알아보는 투자유형과 투자구루" />
@@ -13,6 +14,15 @@
     <meta name="og:description" content="자신과 닮은 투자구루 찾기" >
 
     <title>MBTI로 알아보는 투자유형과 투자구루</title>
+
+    <!-- pyscript -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - pandas
+    </py-env>
+    <!-- pyscript -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -62,12 +72,17 @@
 
         </div>
         <button type="button" class="mt-3">공유하기</button>
-        <button type="button" class="mt-3">투자대가 포트폴리오 보기</button>
+        <button type="button" class="mt-3" onclick="js:goguru()">투자대가 포트폴리오 보기</button>
       </section>
       <section id = "guru">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-
+          <py-script>
+            import pandas as pd
+            berkshire = pd.read_csv("./csv/berkshire_hathaway_inc.csv")
+            portfolio = Element('portfolio')
+            portfolio.write(berkshire)
+          </py-script>
         </div>
       </section>
       <script src="./js/qna.js" charset="utf-8"></script>

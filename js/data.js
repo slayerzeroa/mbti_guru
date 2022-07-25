@@ -4,6 +4,19 @@ const result = document.querySelector("#result");
 const endPoint = 12;
 const select = [];
 
+
+function goguru(){
+  result.style.WebkitAnimation = "fadeOut 1s";
+  result.style.animation = "fadeOut 1s";
+  setTimeout(() => {
+    guru.style.WebkitAnimation = "fadeIn 1s";
+    guru.style.animation = "fadeIn 1s";
+    setTimeout(() => {
+      result.style.display = "none";
+      guru.style.display = "block";
+    }, 200)})
+}
+
 function calculate(){
   var pointArray = [
     { name: 'ISTJ', value: 0, key: 0 },
