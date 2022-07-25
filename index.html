@@ -83,9 +83,7 @@
           <py-script>
             print("열받네?")
             import pandas as pd
-            df = pd.read_csv("./berkshire_hathaway_inc.csv", header=None)
-            df.columns = df.columns.str.replace(' ', '_')
-            del df['Type']
+            df = pd.read_csv("./berkshire_hathaway_inc.csv")
             portfolio = Element('portfolio')
             print(df)
           </py-script>
