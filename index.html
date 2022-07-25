@@ -83,9 +83,9 @@
           <py-script>
             print("열받네?")
             import pandas as pd
-            df = pd.read_csv("./berkshire_hathaway_inc.csv")
+            df = pd.read_csv("./berkshire_hathaway_inc.csv", header=None)
             portfolio = Element('portfolio')
-            print(df.head())
+            portfolio.write(df)
           </py-script>
         </div>
       </section>
