@@ -85,8 +85,8 @@
             import pandas as pd
             df = pd.read_csv("./berkshire_hathaway_inc.csv")
             df.columns = df.columns.str.replace(' ', '_')
-            df = df.dropna(axis = 1, how = 'all')
-            print(df)
+            cut_df = df.dropna(axis = 1, how = 'all')
+            print(cut_df)
           </py-script>
         </div>
       </section>
