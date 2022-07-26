@@ -4,13 +4,6 @@ const result = document.querySelector("#result");
 const endPoint = 12;
 const select = [];
 
-
-function go_getresult(){
-  let point = calculate();
-  const result1 = infoList[point].name;
-  export { result1 };
-}
-
 function goguru(){
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
