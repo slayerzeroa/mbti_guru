@@ -151,3 +151,5 @@ function begin(){
    next(qIdx);
  }, 200);
 }
+
+export const result = calculate();
