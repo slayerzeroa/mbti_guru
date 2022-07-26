@@ -101,9 +101,24 @@
         <div class="portfolio">
           <p id="csv"></p>
           <py-script>
-            print("열받네?")
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
             import pandas as pd
-            df = pd.read_csv("./berkshire_hathaway_inc.csv")
+            df = pd.read_csv(mbti_dir[returnword])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             csv = Element('csv')
