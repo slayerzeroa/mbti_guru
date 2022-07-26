@@ -124,7 +124,7 @@
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
 
-            df = pd.read_csv(mbti_dir[spell])
+            df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             csv = Element('csv')
