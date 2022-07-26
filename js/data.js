@@ -61,8 +61,8 @@ function calculate(){
   let returnword = resultArray[0].key;
   return returnword;
 }
-
-export const result = infoList[calculate()].name;
+//
+// export const result = infoList[calculate()].name;
 
 function setResult(){
   let point = calculate();
