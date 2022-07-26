@@ -5,7 +5,22 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  // console.log(calculate());
+  document.getElementById("ENFJ").style.display ='block';
+  document.getElementById("ENFP").style.display ='block';
+  document.getElementById("ENTJ").style.display ='block';
+  document.getElementById("ENTP").style.display ='block';
+  document.getElementById("ESFJ").style.display ='block';
+  document.getElementById("ESFP").style.display ='block';
+  document.getElementById("ESTJ").style.display ='block';
+  document.getElementById("ESTP").style.display ='block';
+  document.getElementById("INFJ").style.display ='block';
+  document.getElementById("INFP").style.display ='block';
+  document.getElementById("INTJ").style.display ='block';
+  document.getElementById("INTP").style.display ='block';
+  document.getElementById("ISFJ").style.display ='block';
+  document.getElementById("ISFP").style.display ='block';
+  document.getElementById("ISTP").style.display ='block';
+
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
