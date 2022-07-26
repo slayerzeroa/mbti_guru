@@ -62,6 +62,8 @@ function calculate(){
   return returnword;
 }
 
+export const result = infoList[calculate()].name;
+
 function setResult(){
   let point = calculate();
   const resultName = document.querySelector('.resultname');
@@ -152,4 +154,5 @@ function begin(){
  }, 200);
 }
 
-export const result = calculate();
+
+export
