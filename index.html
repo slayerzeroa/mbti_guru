@@ -143,6 +143,486 @@
           </py-script>
         </div>
       </section>
+      <section id = "ISFJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ISFJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "INFJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['INFJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "INTJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['INTJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ISTP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ISTP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ISFP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ISFP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "INFP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['INFP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "INTP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['INTP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ESTP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ESTP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ESFP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ESFP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ENFP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ENFP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ENTP">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ENTP'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ESTJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ESTJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ESFJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ESFJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ENFJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ENFJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "ENTJ">
+        <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
+        <div class="portfolio">
+          <p id="csv"></p>
+          <py-script>
+            import pandas as pd
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_&_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['ENTJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            cut_df = df.dropna(axis = 1, how = 'all')
+            csv = Element('csv')
+            csv.write(cut_df)
+          </py-script>
+        </div>
+      </section>
       <script src="./js/qna.js" charset="utf-8"></script>
       <script src="./js/data.js" charset="utf-8"></script>
     </div>
