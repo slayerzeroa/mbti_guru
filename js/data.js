@@ -153,4 +153,6 @@ function begin(){
 }
 
 
-export default let result = resultArray[0].key;
+let result = resultArray[0].key;
+
+export { result };
