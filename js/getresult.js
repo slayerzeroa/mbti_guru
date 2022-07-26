@@ -1,2 +1,2 @@
-import result1 from './data.js';
+const { result1 } = require("./data.js");
 console.log(result1);

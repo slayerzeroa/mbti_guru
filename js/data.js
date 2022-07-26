@@ -8,7 +8,7 @@ const select = [];
 function go_getresult(){
   let point = calculate();
   const result1 = infoList[point].name;
-  export default result1;
+  module.exports = { result1 };
 }
 
 function goguru(){
