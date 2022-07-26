@@ -5,7 +5,7 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  console.log(calculate());
+  // console.log(calculate());
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
