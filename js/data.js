@@ -151,3 +151,6 @@ function begin(){
    next(qIdx);
  }, 200);
 }
+
+
+export let result = resultArray[0].key;
