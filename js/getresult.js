@@ -1,2 +1,2 @@
-var result1 = require('./data.js');
+import result1 from './data.js';
 console.log(result1);
