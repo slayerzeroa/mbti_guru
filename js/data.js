@@ -125,7 +125,6 @@ function addAnswer(answerText, qIdx, idx){
 function next(qIdx){
   if(qIdx === endPoint){
     goresult();
-    go_getresult();
     return;
   }
   var q = document.querySelector('.qBox');
