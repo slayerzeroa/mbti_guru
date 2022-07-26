@@ -153,6 +153,6 @@ function begin(){
 }
 
 
-let result1 = resultArray[0].key;
+let result1 = calculate();
 
 export { result1 };
