@@ -104,11 +104,8 @@
             import pandas as pd
             import js
 
-            div = js.document.createElement("div")
-            div.innerHTML = "<h1>This element was created from Python</h1>"
-            js.document.body.prepend(div)
-
-            resultname = Element('resultname')
+            point = js.calculate()
+            resultname = js.infoList[point].name
             print(resultname)
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
