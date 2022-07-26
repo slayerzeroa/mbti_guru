@@ -39,7 +39,6 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - pandas
-      - js
       - paths:
         - ./csv/berkshire_hathaway_inc.csv
         - ./berkshire_hathaway_inc.csv
@@ -103,11 +102,7 @@
           <p id="csv"></p>
           <py-script>
             import pandas as pd
-            import js
-
-            print(js.window.innerWidth)
-            print(js.document.title)
-            js.console.log("Hello from Python!")
+            
             resultname = Element('resultname')
             print(resultname)
 
