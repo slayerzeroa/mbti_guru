@@ -41,7 +41,7 @@
       - pandas
       - paths:
         - ./csv/berkshire_hathaway_inc.csv
-        - ./berkshire_hathaway_inc.csv
+        <!-- - ./berkshire_hathaway_inc.csv -->
     </py-env>
     <!-- pyscript -->
 
@@ -52,6 +52,21 @@
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./css/guru.css">
+    <link rel="stylesheet" href="./css/INFJ.css">
+    <link rel="stylesheet" href="./css/INFP.css">
+    <link rel="stylesheet" href="./css/INTJ.css">
+    <link rel="stylesheet" href="./css/INTP.css">
+    <link rel="stylesheet" href="./css/ISFJ.css">
+    <link rel="stylesheet" href="./css/ISFP.css">
+    <link rel="stylesheet" href="./css/ISTP.css">
+    <link rel="stylesheet" href="./css/ENFJ.css">
+    <link rel="stylesheet" href="./css/ENFP.css">
+    <link rel="stylesheet" href="./css/ENTJ.css">
+    <link rel="stylesheet" href="./css/ENTP.css">
+    <link rel="stylesheet" href="./css/ESFJ.css">
+    <link rel="stylesheet" href="./css/ESFP.css">
+    <link rel="stylesheet" href="./css/ESTJ.css">
+    <link rel="stylesheet" href="./css/ESTP.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
@@ -119,8 +134,8 @@
             'ENFJ':'./gates_bill_&_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
-
-            df = pd.read_csv(mbti_dir['ISFJ'])
+            df = pd.read_csv("./csv/berkshire_hathaway_inc.csv")
+            <!-- df = pd.read_csv(mbti_dir['ISFJ']) -->
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             csv = Element('csv')
