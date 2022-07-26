@@ -1,7 +1,7 @@
 # guru table
 import sqlite3
 import pandas as pd
-import js
+import pyodide
 
 def get_portfolio():        # 포트폴리오 받아오는 함수
     con = sqlite3.connect("./db/guru.db")   # db 접근
@@ -18,3 +18,5 @@ def cut(df):
     return cut_df
 
 print(cut(get_portfolio()))
+
+pyodide.register_js_module
