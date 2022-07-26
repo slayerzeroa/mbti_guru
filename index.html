@@ -99,7 +99,7 @@
       <section id = "guru">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <script src="./js/data.js">
+          <script src="./js/data.js" id="spell">
             var spell=calculate();
           </script>
           <p id="csv"></p>
@@ -120,6 +120,8 @@
             'ENFJ':'./gates_bill_&_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
+            spell = Element("spell")
+            
             import pandas as pd
             df = pd.read_csv(mbti_dir[spell])
             df.columns = df.columns.str.replace(' ', '_')
