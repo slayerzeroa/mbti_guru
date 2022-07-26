@@ -41,7 +41,7 @@
       - pandas
       - paths:
         - ./csv/berkshire_hathaway_inc.csv
-        <!-- - ./berkshire_hathaway_inc.csv -->
+        - ./berkshire_hathaway_inc.csv
     </py-env>
     <!-- pyscript -->
 
@@ -134,8 +134,8 @@
             'ENFJ':'./gates_bill_&_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
-            df = pd.read_csv("./csv/berkshire_hathaway_inc.csv")
-            <!-- df = pd.read_csv(mbti_dir['ISFJ']) -->
+
+            df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             csv = Element('csv')
