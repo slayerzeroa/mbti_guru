@@ -20,6 +20,8 @@ function goguru(){
   document.getElementById("ISFJ").style.display ='none';
   document.getElementById("ISFP").style.display ='none';
   document.getElementById("ISTP").style.display ='none';
+  document.getElementById("pyguru").style.display ='none';
+  document.getElementById("pyISFJ").style.display ='none';
 
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
