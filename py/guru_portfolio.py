@@ -1,7 +1,7 @@
 # guru table
 import sqlite3
 import pandas as pd
-
+import js
 
 def get_portfolio():        # 포트폴리오 받아오는 함수
     con = sqlite3.connect("./db/guru.db")   # db 접근

@@ -39,6 +39,7 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - pandas
+      - js
       - paths:
         - ./csv/berkshire_hathaway_inc.csv
         - ./berkshire_hathaway_inc.csv
@@ -84,7 +85,7 @@
       </section>
       <section id="result" class="mx-auto mt-5 py-5 px-3">
         <h1>당신의 결과는?</h1>
-        <div class = "resultname">
+        <div id="resultname" class = "resultname">
 
         </div>
         <div id="resultImg" class="my-3 col-lg-10 col-md-10 col-sm-10 col-12 mx-auto">
@@ -99,11 +100,13 @@
       <section id = "guru">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <script src="./js/data.js" id="spell">
-            var spell=calculate();
-          </script>
           <p id="csv"></p>
           <py-script>
+            import pandas as pd
+
+            resultname = Element('resultname')
+            print(resultname)
+
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
             'INTJ':'./renaissance_technologies_llc.csv',
@@ -120,9 +123,7 @@
             'ENFJ':'./gates_bill_&_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
-            spell = Element("spell")
-            
-            import pandas as pd
+
             df = pd.read_csv(mbti_dir[spell])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
