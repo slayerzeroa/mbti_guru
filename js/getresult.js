@@ -1,2 +1,2 @@
-import { result } from './data.js';
-console.log(result);
+import { result1 } from './data.js';
+console.log(result1);
