@@ -5,6 +5,12 @@ const endPoint = 12;
 const select = [];
 
 
+function go_getresult(){
+  let point = calculate();
+  const result1 = infoList[point].name;
+  export default {result1};
+}
+
 function goguru(){
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
@@ -126,6 +132,7 @@ function addAnswer(answerText, qIdx, idx){
 function next(qIdx){
   if(qIdx === endPoint){
     goresult();
+    go_getresult();
     return;
   }
   var q = document.querySelector('.qBox');
@@ -151,8 +158,3 @@ function begin(){
    next(qIdx);
  }, 200);
 }
-
-
-let result1 = calculate();
-
-export { result1 };
