@@ -39,7 +39,6 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - pandas
-      - js
       - paths:
         - ./csv/berkshire_hathaway_inc.csv
         - ./berkshire_hathaway_inc.csv
@@ -104,8 +103,8 @@
           <py-script>
             import pandas as pd
 
-            resultname = Element('resultname')
-            print(resultname)
+            <!-- resultname = Element('resultname')
+            print(resultname) -->
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
