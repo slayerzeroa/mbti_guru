@@ -102,14 +102,13 @@
           <p id="csv"></p>
           <py-script>
             import pandas as pd
-            import js
+            import { result } from "./js/data.js"
+            print(result)
+            <!-- import js
 
-            div = js.document.createElement("div")
-            div.innerHTML = "<h1>This element was created from Python</h1>"
-            js.document.body.prepend(div)
-
-            resultname = Element('resultname')
-            print(resultname)
+            point = js.calculate() -->
+            <!-- resultname = js.infoList[point].name
+            print(resultname) -->
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
