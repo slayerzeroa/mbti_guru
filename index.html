@@ -380,11 +380,9 @@
             'ENFJ':'./gates_bill_n_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
-            con = sqlite3.connect("./py/db/guru.db")
+            con = sql.connect("./py/db/guru.db")
             cur = con.cursor()
-            query = cur.execute("SELECT * FROM berkshire")
-            cols = [column[0] for column in query.description]  # 컬럼 설정
-            df = pd.DataFrame.from_records(data=query.fetchall(), columns=cols)
+            df = pd.read_sql("SELECT * FROM berkshire", con)
             con.close()
 
 <!--
