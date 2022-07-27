@@ -30,7 +30,7 @@ function goguru(){
       result.style.display = "none";
       guru.style.display = "block";
     }, 200)})
-    guru.style.display="none";
+  document.getElementById("guru").style.display ='none';
 }
 
 function calculate(){
