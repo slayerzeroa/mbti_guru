@@ -60,10 +60,11 @@ function calculate(){
   console.log(resultArray);
   let returnword = resultArray[0].key;
   return returnword;
+  return resultArray[0].name;
 }
 
 function setResult(){
-  let point = calculate();
+  let {point, name} = calculate();
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;
 
