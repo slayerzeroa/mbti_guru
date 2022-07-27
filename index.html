@@ -136,7 +136,7 @@
           <p id="csv_ISFJ"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -157,6 +157,7 @@
 
             df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ISFJ')
@@ -169,6 +170,43 @@
         <h2>INFJ - 찰리멍거</h2>
         <div class="portfolio">
           <p id="csv_INFJ"></p>
+          <py-script>
+            import pandas as pd
+            pd.options.display.float_format = '{:,}'.format
+
+
+            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
+            'INFJ':'./daily_journal_corp.csv',
+            'INTJ':'./renaissance_technologies_llc.csv',
+            'ISTP':'./himalaya_capital_management_llc.csv',
+            'ISFP':'./tiger_management_llc.csv',
+            'INFP':'./soros_fund_management_llc.csv',
+            'INTP':'./scion_asset_management__llc.csv',
+            'ESTP':'./icahn_carl_c_et_al.csv',
+            'ESFP':'./kerrisdale_advisers__llc.csv',
+            'ENFP':'./fisher_investments_inc.csv',
+            'ENTP':'./elliott_investment_management_l_p_.csv',
+            'ESTJ':'./bridgewater_associates__lp.csv',
+            'ESFJ':'./national_pension_service.csv',
+            'ENFJ':'./gates_bill_n_melinda_foundation.csv',
+            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
+
+
+            df = pd.read_csv(mbti_dir['INFJ'])
+            df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
+            cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
+            csv = Element('csv_INFJ')
+            csv.write(show_df)
+          </py-script>
+        </div>
+      </section>
+      <section id = "INTJ">
+        <h1>당신과 같은 투자대가의 포트폴리오 상위 5종목은?</h1>
+        <h2>INTJ - 르네상스테크놀로지(제임스 사이먼스)</h2>
+        <div class="portfolio">
+          <p id="csv_INTJ"></p>
           <py-script>
             import pandas as pd
             pd.options.display.float_format = '{:,}'.format
@@ -192,45 +230,9 @@
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
 
-            df = pd.read_csv(mbti_dir['INFJ'])
-            df.columns = df.columns.str.replace(' ', '_')
-            cut_df = df.dropna(axis = 1, how = 'all')
-            show_df = cut_df.head()
-            csv = Element('csv_INFJ')
-            csv.write(show_df)
-          </py-script>
-        </div>
-      </section>
-      <section id = "INTJ">
-        <h1>당신과 같은 투자대가의 포트폴리오 상위 5종목은?</h1>
-        <h2>INTJ - 르네상스테크놀로지(제임스 사이먼스)</h2>
-        <div class="portfolio">
-          <p id="csv_INTJ"></p>
-          <py-script>
-            import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
-
-
-
-            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
-            'INFJ':'./daily_journal_corp.csv',
-            'INTJ':'./renaissance_technologies_llc.csv',
-            'ISTP':'./himalaya_capital_management_llc.csv',
-            'ISFP':'./tiger_management_llc.csv',
-            'INFP':'./soros_fund_management_llc.csv',
-            'INTP':'./scion_asset_management__llc.csv',
-            'ESTP':'./icahn_carl_c_et_al.csv',
-            'ESFP':'./kerrisdale_advisers__llc.csv',
-            'ENFP':'./fisher_investments_inc.csv',
-            'ENTP':'./elliott_investment_management_l_p_.csv',
-            'ESTJ':'./bridgewater_associates__lp.csv',
-            'ESFJ':'./national_pension_service.csv',
-            'ENFJ':'./gates_bill_n_melinda_foundation.csv',
-            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
-
-
             df = pd.read_csv(mbti_dir['INTJ'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_INTJ')
@@ -245,7 +247,7 @@
           <p id="csv_ISTP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -268,6 +270,7 @@
 
             df = pd.read_csv(mbti_dir['ISTP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ISTP')
@@ -282,7 +285,7 @@
           <p id="csv_ISFP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -305,6 +308,7 @@
 
             df = pd.read_csv(mbti_dir['ISFP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ISFP')
@@ -319,7 +323,7 @@
           <p id="csv_INFP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -339,6 +343,7 @@
 
             df = pd.read_csv(mbti_dir['INFP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_INFP')
@@ -353,7 +358,7 @@
           <p id="csv_INTP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -376,6 +381,7 @@
 
             df = pd.read_csv(mbti_dir['INTP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_INTP')
@@ -390,7 +396,7 @@
           <p id="csv_ESTP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -413,6 +419,7 @@
 
             df = pd.read_csv(mbti_dir['ESTP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ESTP')
@@ -427,7 +434,7 @@
           <p id="csv_ESFP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -450,6 +457,7 @@
 
             df = pd.read_csv(mbti_dir['ESFP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ESFP')
@@ -464,7 +472,7 @@
           <p id="csv_ENFP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -487,6 +495,7 @@
 
             df = pd.read_csv(mbti_dir['ENFP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ENFP')
@@ -501,7 +510,7 @@
           <p id="csv_ENTP"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -524,6 +533,7 @@
 
             df = pd.read_csv(mbti_dir['ENTP'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ENTP')
@@ -538,7 +548,7 @@
           <p id="csv_ESTJ"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -561,6 +571,7 @@
 
             df = pd.read_csv(mbti_dir['ESTJ'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ESTJ')
@@ -575,7 +586,7 @@
           <p id="csv_ESFJ"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -598,6 +609,7 @@
 
             df = pd.read_csv(mbti_dir['ESFJ'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ESFJ')
@@ -612,7 +624,7 @@
           <p id="csv_ENFJ"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -635,6 +647,7 @@
 
             df = pd.read_csv(mbti_dir['ENFJ'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ENFJ')
@@ -649,7 +662,7 @@
           <p id="csv_ENTJ"></p>
           <py-script>
             import pandas as pd
-            pd.options.display.float_format = '{:,.0f}'.format
+            pd.options.display.float_format = '{:,}'.format
 
 
 
@@ -672,6 +685,7 @@
 
             df = pd.read_csv(mbti_dir['ENTJ'])
             df.columns = df.columns.str.replace(' ', '_')
+            df = df.astype(int)
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
             csv = Element('csv_ENTJ')
