@@ -8,11 +8,11 @@ function goguru(){
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
-    ISFJ.style.WebkitAnimation = "fadeIn 1s";
-    ISFJ.style.animation = "fadeIn 1s";
+    guru.style.WebkitAnimation = "fadeIn 1s";
+    guru.style.animation = "fadeIn 1s";
     setTimeout(() => {
       result.style.display = "none";
-      ISFJ.style.display = "block";
+      guru.style.display = "block";
     }, 200)})
 }
 
