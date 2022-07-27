@@ -124,11 +124,11 @@
         <button type="button" class="mt-3">공유하기</button>
         <button type="button" class="mt-3" onclick="js:goguru()">투자대가 포트폴리오 보기</button>
       </section>
-      <section>
+      <section id = "guru">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
           <p id="csv"></p>
-          <py-script id="guru">
+          <py-script id="pyguru">
             import pandas as pd
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
@@ -156,11 +156,11 @@
           </py-script>
         </div>
       </section>
-      <section>
+      <section id = "ISFJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
           <p id="csv"></p>
-          <py-script id="ISFJ">
+          <py-script id="pyguru">
             import pandas as pd
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
@@ -188,11 +188,11 @@
           </py-script>
         </div>
       </section>
-      <section>
+      <section id = "INFJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
           <p id="csv"></p>
-          <py-script id="INFJ">
+          <py-script>
             import pandas as pd
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
