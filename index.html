@@ -160,7 +160,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_guru')
             csv.write(show_df)
           </py-script>
@@ -195,7 +194,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ISFJ')
             csv.write(show_df)
           </py-script>
@@ -233,7 +231,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_INFJ')
             csv.write(show_df)
           </py-script>
@@ -271,7 +268,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_INTJ')
             csv.write(show_df)
           </py-script>
@@ -309,7 +305,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ISTP')
             csv.write(show_df)
           </py-script>
@@ -347,7 +342,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ISFP')
             csv.write(show_df)
           </py-script>
@@ -380,20 +374,11 @@
             'ENFJ':'./gates_bill_n_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
-            con = sql.connect("./guru.db")
-            cur = con.cursor()                      # 커서 생성
-            query = cur.execute("SELECT * FROM berkshire")  # 쿼리 설정
-            cols = [column[0] for column in query.description]  # 컬럼 설정
-            df = pd.DataFrame.from_records(data=query.fetchall(), columns=cols)      # pandas 포트폴리오 가져오기
-            con.close()     # sqlite 종료
-
-<!--
-            df = pd.read_csv(mbti_dir['INFP']) -->
+            df = pd.read_csv(mbti_dir['INFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-
-            csv = Element('csv_INFP')
+            csv = Element('csv_ENTJ')
             csv.write(show_df)
           </py-script>
         </div>
@@ -430,7 +415,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_INTP')
             csv.write(show_df)
           </py-script>
@@ -468,7 +452,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ESTP')
             csv.write(show_df)
           </py-script>
@@ -506,7 +489,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ESFP')
             csv.write(show_df)
           </py-script>
@@ -544,7 +526,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ENFP')
             csv.write(show_df)
           </py-script>
@@ -582,7 +563,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ENTP')
             csv.write(show_df)
           </py-script>
@@ -620,7 +600,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ESTJ')
             csv.write(show_df)
           </py-script>
@@ -658,7 +637,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ESFJ')
             csv.write(show_df)
           </py-script>
@@ -696,7 +674,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ENFJ')
             csv.write(show_df)
           </py-script>
@@ -734,7 +711,6 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-0
             csv = Element('csv_ENTJ')
             csv.write(show_df)
           </py-script>
