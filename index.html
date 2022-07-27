@@ -44,6 +44,7 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - pandas
+      - sqlite3
       - paths:
         - ./berkshire_hathaway_inc.csv
         - ./daily_journal_corp.csv
@@ -60,6 +61,7 @@
         - ./national_pension_service.csv
         - ./gates_bill_n_melinda_foundation.csv
         - ./pershing_square_capital_management__l_p_.csv
+        - ./py/db/guru.db
     </py-env>
     <!-- pyscript -->
 
@@ -158,7 +160,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_guru')
             csv.write(show_df)
           </py-script>
@@ -193,7 +195,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ISFJ')
             csv.write(show_df)
           </py-script>
@@ -231,7 +233,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_INFJ')
             csv.write(show_df)
           </py-script>
@@ -269,7 +271,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_INTJ')
             csv.write(show_df)
           </py-script>
@@ -307,7 +309,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ISTP')
             csv.write(show_df)
           </py-script>
@@ -345,7 +347,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ISFP')
             csv.write(show_df)
           </py-script>
@@ -358,7 +360,7 @@
           <p id="csv_INFP"></p>
           <py-script>
             import pandas as pd
-
+            import sqlite3 as sql
 
 
 
@@ -378,12 +380,19 @@
             'ENFJ':'./gates_bill_n_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
+            con = sqlite3.connect("./py/db/guru.db")
+            cur = con.cursor()
+            query = cur.execute("SELECT * FROM berkshire")
+            cols = [column[0] for column in query.description]  # 컬럼 설정
+            df = pd.DataFrame.from_records(data=query.fetchall(), columns=cols)
+            con.close()
 
-            df = pd.read_csv(mbti_dir['INFP'])
+<!--
+            df = pd.read_csv(mbti_dir['INFP']) -->
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+
             csv = Element('csv_INFP')
             csv.write(show_df)
           </py-script>
@@ -421,7 +430,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_INTP')
             csv.write(show_df)
           </py-script>
@@ -459,7 +468,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ESTP')
             csv.write(show_df)
           </py-script>
@@ -497,7 +506,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ESFP')
             csv.write(show_df)
           </py-script>
@@ -535,7 +544,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ENFP')
             csv.write(show_df)
           </py-script>
@@ -573,7 +582,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ENTP')
             csv.write(show_df)
           </py-script>
@@ -611,7 +620,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ESTJ')
             csv.write(show_df)
           </py-script>
@@ -649,7 +658,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ESFJ')
             csv.write(show_df)
           </py-script>
@@ -687,7 +696,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ENFJ')
             csv.write(show_df)
           </py-script>
@@ -725,7 +734,7 @@
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
-            show_df = show_df.reset_index(drop = True)
+0
             csv = Element('csv_ENTJ')
             csv.write(show_df)
           </py-script>
