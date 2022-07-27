@@ -127,7 +127,7 @@
       <section id = "guru">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_guru"></p>
           <py-script id="pyguru">
             import pandas as pd
 
@@ -151,7 +151,7 @@
             df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_guru')
             csv.write(cut_df)
           </py-script>
         </div>
