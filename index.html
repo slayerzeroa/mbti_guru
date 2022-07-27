@@ -159,8 +159,8 @@
       <section id = "ISFJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
-          <py-script id="pyguru">
+          <p id="csv_ISFJ"></p>
+          <py-script>
             import pandas as pd
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
@@ -183,7 +183,7 @@
             df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ISFJ')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -191,7 +191,7 @@
       <section id = "INFJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_INFJ"></p>
           <py-script>
             import pandas as pd
 
@@ -215,7 +215,7 @@
             df = pd.read_csv(mbti_dir['INFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_INFJ')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -223,7 +223,7 @@
       <section id = "INTJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_INTJ"></p>
           <py-script>
             import pandas as pd
 
@@ -247,7 +247,7 @@
             df = pd.read_csv(mbti_dir['INTJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_INTJ')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -255,7 +255,7 @@
       <section id = "ISTP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ISTP"></p>
           <py-script>
             import pandas as pd
 
@@ -279,7 +279,7 @@
             df = pd.read_csv(mbti_dir['ISTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ISTP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -287,7 +287,7 @@
       <section id = "ISFP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ISFP"></p>
           <py-script>
             import pandas as pd
 
@@ -311,7 +311,7 @@
             df = pd.read_csv(mbti_dir['ISFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ISFP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -319,7 +319,7 @@
       <section id = "INFP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_INFP"></p>
           <py-script>
             import pandas as pd
 
@@ -343,7 +343,7 @@
             df = pd.read_csv(mbti_dir['INFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_INFP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -351,7 +351,7 @@
       <section id = "INTP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_INTP"></p>
           <py-script>
             import pandas as pd
 
@@ -375,7 +375,7 @@
             df = pd.read_csv(mbti_dir['INTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_INTP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -383,7 +383,7 @@
       <section id = "ESTP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ESTP"></p>
           <py-script>
             import pandas as pd
 
@@ -407,7 +407,7 @@
             df = pd.read_csv(mbti_dir['ESTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ESTP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -415,7 +415,7 @@
       <section id = "ESFP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ESFP"></p>
           <py-script>
             import pandas as pd
 
@@ -439,7 +439,7 @@
             df = pd.read_csv(mbti_dir['ESFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ESFP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -447,7 +447,7 @@
       <section id = "ENFP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ENFP"></p>
           <py-script>
             import pandas as pd
 
@@ -471,7 +471,7 @@
             df = pd.read_csv(mbti_dir['ENFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ENFP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -479,7 +479,7 @@
       <section id = "ENTP">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ENTP"></p>
           <py-script>
             import pandas as pd
 
@@ -503,7 +503,7 @@
             df = pd.read_csv(mbti_dir['ENTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ENTP')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -511,7 +511,7 @@
       <section id = "ESTJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ESTJ"></p>
           <py-script>
             import pandas as pd
 
@@ -535,7 +535,7 @@
             df = pd.read_csv(mbti_dir['ESTJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ESTJ')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -543,7 +543,7 @@
       <section id = "ESFJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ESFJ"></p>
           <py-script>
             import pandas as pd
 
@@ -567,7 +567,7 @@
             df = pd.read_csv(mbti_dir['ESFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ESFJ')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -575,8 +575,8 @@
       <section id = "ENFJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
-          <py-script id="pyENFJ">
+          <p id="csv_ENFJ"></p>
+          <py-script>
             import pandas as pd
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
@@ -599,7 +599,7 @@
             df = pd.read_csv(mbti_dir['ENFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ENFJ')
             csv.write(cut_df)
           </py-script>
         </div>
@@ -607,7 +607,7 @@
       <section id = "ENTJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
         <div class="portfolio">
-          <p id="csv"></p>
+          <p id="csv_ENTJ"></p>
           <py-script>
             import pandas as pd
 
@@ -631,7 +631,7 @@
             df = pd.read_csv(mbti_dir['ENTJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
-            csv = Element('csv')
+            csv = Element('csv_ENTJ')
             csv.write(cut_df)
           </py-script>
         </div>
