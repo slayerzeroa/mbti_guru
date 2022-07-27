@@ -5,8 +5,7 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  let guruname = setname();
-  let guruname1 = toVar(guruname);
+  let guruname = toVar();
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
@@ -18,8 +17,8 @@ function goguru(){
     }, 200)})
 }
 
-function toVar(varString) {
-    var myVar = eval(valString);
+function toVar() {
+    var myVar = eval(setname());
     return myVar;
 }
 
