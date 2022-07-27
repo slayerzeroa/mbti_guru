@@ -61,7 +61,7 @@
         - ./national_pension_service.csv
         - ./gates_bill_n_melinda_foundation.csv
         - ./pershing_square_capital_management__l_p_.csv
-        - ./py/db/guru.db
+        - ./guru.db
     </py-env>
     <!-- pyscript -->
 
@@ -380,10 +380,12 @@
             'ENFJ':'./gates_bill_n_melinda_foundation.csv',
             'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
 
-            con = sql.connect("./py/db/guru.db")
-            cur = con.cursor()
-            df = pd.read_sql("SELECT * FROM berkshire", con)
-            con.close()
+            con = sql.connect("./guru.db")
+            cur = con.cursor()                      # 커서 생성
+            query = cur.execute("SELECT * FROM berkshire")  # 쿼리 설정
+            cols = [column[0] for column in query.description]  # 컬럼 설정
+            df = pd.DataFrame.from_records(data=query.fetchall(), columns=cols)      # pandas 포트폴리오 가져오기
+            con.close()     # sqlite 종료
 
 <!--
             df = pd.read_csv(mbti_dir['INFP']) -->

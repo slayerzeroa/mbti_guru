@@ -4,6 +4,7 @@ const result = document.querySelector("#result");
 const endPoint = 12;
 const select = [];
 
+
 function goguru(){
   let guruname = toVar();
   result.style.WebkitAnimation = "fadeOut 1s";
