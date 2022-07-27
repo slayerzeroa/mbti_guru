@@ -5,7 +5,7 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  console.log(calculate());
+  console.log(setname());
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
@@ -15,6 +15,51 @@ function goguru(){
       result.style.display = "none";
       guru.style.display = "block";
     }, 200)})
+}
+
+function setname(){
+  var pointArray = [
+    { name: 'ISTJ', value: 0, key: 0 },
+    { name: 'ISFJ', value: 0, key: 1 },
+    { name: 'INFJ', value: 0, key: 2 },
+    { name: 'INTJ', value: 0, key: 3 },
+    { name: 'ISTP', value: 0, key: 4 },
+    { name: 'ISFP', value: 0, key: 5 },
+    { name: 'INFP', value: 0, key: 6 },
+    { name: 'INTP', value: 0, key: 7 },
+    { name: 'ESTP', value: 0, key: 8 },
+    { name: 'ESFP', value: 0, key: 9 },
+    { name: 'ENFP', value: 0, key: 10 },
+    { name: 'ENTP', value: 0, key: 11 },
+    { name: 'ESTJ', value: 0, key: 12 },
+    { name: 'ESFJ', value: 0, key: 13 },
+    { name: 'ENFJ', value: 0, key: 14 },
+    { name: 'ENTJ', value: 0, key: 15 },
+  ]
+
+  for(let i = 0; i < endPoint; i++){
+    var target = qnaList[i].a[select[i]];
+    for(let j = 0; j < target.type.length; j++){
+      for(let k = 0; k < pointArray.length; k++){
+        if(target.type[j] === pointArray[k].name){
+          pointArray[k].value += 1;
+        }
+      }
+    }
+  }
+
+  var resultArray = pointArray.sort(function (a, b){
+    if(a.value > b.value){
+      return -1;
+    }
+    if(a.value < b.value){
+      return 1;
+    }
+    return 0;
+  })
+  console.log(resultArray);
+  let returnname = resultArray[0].name;
+  return returnname;
 }
 
 function calculate(){
@@ -60,11 +105,10 @@ function calculate(){
   console.log(resultArray);
   let returnword = resultArray[0].key;
   return returnword;
-  return resultArray[0].name;
 }
 
 function setResult(){
-  let {point, name} = calculate();
+  let point = calculate();
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;
 
