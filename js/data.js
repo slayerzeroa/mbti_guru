@@ -1,7 +1,7 @@
 const main = document.querySelector("#main");
 const mbti = document.querySelector("#mbti");
 const result = document.querySelector("#result");
-const endPoint = 12;
+const endPoint = 16;
 const select = [];
 
 function goguru(){
