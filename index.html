@@ -132,9 +132,6 @@
           <py-script id="pyguru">
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
-
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
             'INTJ':'./renaissance_technologies_llc.csv',
@@ -155,8 +152,9 @@
             df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_guru')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -168,9 +166,6 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
-
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
             'INTJ':'./renaissance_technologies_llc.csv',
@@ -191,8 +186,9 @@
             df = pd.read_csv(mbti_dir['ISFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ISFJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -204,8 +200,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -227,8 +223,9 @@
             df = pd.read_csv(mbti_dir['INFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_INFJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -240,8 +237,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -263,8 +260,9 @@
             df = pd.read_csv(mbti_dir['INTJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_INTJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -276,8 +274,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -299,8 +297,9 @@
             df = pd.read_csv(mbti_dir['ISTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ISTP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -312,8 +311,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -335,8 +334,9 @@
             df = pd.read_csv(mbti_dir['ISFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ISFP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -348,8 +348,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -371,8 +371,9 @@
             df = pd.read_csv(mbti_dir['INFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_INFP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -384,8 +385,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -407,8 +408,9 @@
             df = pd.read_csv(mbti_dir['INTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_INTP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -420,8 +422,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -443,8 +445,9 @@
             df = pd.read_csv(mbti_dir['ESTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ESTP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -456,8 +459,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -479,8 +482,9 @@
             df = pd.read_csv(mbti_dir['ESFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ESFP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -492,8 +496,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -515,8 +519,9 @@
             df = pd.read_csv(mbti_dir['ENFP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ENFP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -528,8 +533,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -551,8 +556,9 @@
             df = pd.read_csv(mbti_dir['ENTP'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ENTP')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -564,8 +570,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -587,8 +593,9 @@
             df = pd.read_csv(mbti_dir['ESTJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ESTJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -600,8 +607,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -623,8 +630,9 @@
             df = pd.read_csv(mbti_dir['ESFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ESFJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
@@ -636,8 +644,8 @@
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -659,21 +667,22 @@
             df = pd.read_csv(mbti_dir['ENFJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ENFJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
       <section id = "ENTJ">
         <h1>당신과 같은 투자대가의 포트폴리오는?</h1>
-        <h2>ENTJ - 빌 애크먼</h2>
+        <h2>ENTJ빌 애크먼</h2>
         <div class="portfolio">
           <p id="csv_ENTJ"></p>
           <py-script>
             import pandas as pd
 
-            pd.set_option('display.max_columns', None)
-            pd.set_option('display.max_rows', None)
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -695,8 +704,9 @@
             df = pd.read_csv(mbti_dir['ENTJ'])
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
+            show_df = cut_df.head()
             csv = Element('csv_ENTJ')
-            csv.write(cut_df)
+            csv.write(show_df)
           </py-script>
         </div>
       </section>
