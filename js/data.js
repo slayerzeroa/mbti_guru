@@ -5,15 +5,15 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  console.log(setname());
+  let guruname = setname();
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
-    INTP.style.WebkitAnimation = "fadeIn 1s";
-    INTP.style.animation = "fadeIn 1s";
+    guruname.style.WebkitAnimation = "fadeIn 1s";
+    guruname.style.animation = "fadeIn 1s";
     setTimeout(() => {
       result.style.display = "none";
-      INTP.style.display = "block";
+      guruname.style.display = "block";
     }, 200)})
 }
 
