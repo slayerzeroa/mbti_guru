@@ -6,15 +6,21 @@ const select = [];
 
 function goguru(){
   let guruname = setname();
+  let guruname1 = toVar(guruname);
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
-    guruname.style.WebkitAnimation = "fadeIn 1s";
-    guruname.style.animation = "fadeIn 1s";
+    guruname1.style.WebkitAnimation = "fadeIn 1s";
+    guruname1.style.animation = "fadeIn 1s";
     setTimeout(() => {
       result.style.display = "none";
-      guruname.style.display = "block";
+      guruname1.style.display = "block";
     }, 200)})
+}
+
+function toVar(varString) {
+    var myVar = eval(valString);
+    return myVar;
 }
 
 function setname(){
