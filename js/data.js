@@ -5,30 +5,14 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  document.getElementById("ENFJ").style.display ='block';
-  document.getElementById("ENFP").style.display ='none';
-  document.getElementById("ENTJ").style.display ='none';
-  document.getElementById("ENTP").style.display ='none';
-  document.getElementById("ESFJ").style.display ='none';
-  document.getElementById("ESFP").style.display ='none';
-  document.getElementById("ESTJ").style.display ='none';
-  document.getElementById("ESTP").style.display ='none';
-  document.getElementById("INFJ").style.display ='none';
-  document.getElementById("INFP").style.display ='none';
-  document.getElementById("INTJ").style.display ='none';
-  document.getElementById("INTP").style.display ='none';
-  document.getElementById("ISFJ").style.display ='none';
-  document.getElementById("ISFP").style.display ='none';
-  document.getElementById("ISTP").style.display ='none';
-
   result.style.WebkitAnimation = "fadeOut 1s";
   result.style.animation = "fadeOut 1s";
   setTimeout(() => {
-    ENFJ.style.WebkitAnimation = "fadeIn 1s";
-    ENFJ.style.animation = "fadeIn 1s";
+    ISFJ.style.WebkitAnimation = "fadeIn 1s";
+    ISFJ.style.animation = "fadeIn 1s";
     setTimeout(() => {
       result.style.display = "none";
-      ENFJ.style.display = "block";
+      ISFJ.style.display = "block";
     }, 200)})
 }
 
