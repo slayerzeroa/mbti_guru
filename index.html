@@ -129,40 +129,6 @@
         <button type="button" class="mt-3">공유하기</button>
         <button type="button" class="mt-3" onclick="js:goguru()">투자대가 포트폴리오 보기</button>
       </section>
-      <section id = "guru">
-        <h1>당신과 같은 투자대가의 포트폴리오 상위 5종목은?</h1>
-        <h2>guru</h2>
-        <div class="portfolio">
-          <p id="csv_guru"></p>
-          <py-script id="pyguru">
-            import pandas as pd
-
-            mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
-            'INFJ':'./daily_journal_corp.csv',
-            'INTJ':'./renaissance_technologies_llc.csv',
-            'ISTP':'./himalaya_capital_management_llc.csv',
-            'ISFP':'./tiger_management_llc.csv',
-            'INFP':'./soros_fund_management_llc.csv',
-            'INTP':'./scion_asset_management__llc.csv',
-            'ESTP':'./icahn_carl_c_et_al.csv',
-            'ESFP':'./kerrisdale_advisers__llc.csv',
-            'ENFP':'./fisher_investments_inc.csv',
-            'ENTP':'./elliott_investment_management_l_p_.csv',
-            'ESTJ':'./bridgewater_associates__lp.csv',
-            'ESFJ':'./national_pension_service.csv',
-            'ENFJ':'./gates_bill_n_melinda_foundation.csv',
-            'ENTJ':'./pershing_square_capital_management__l_p_.csv'}
-
-
-            df = pd.read_csv(mbti_dir['ISFJ'])
-            df.columns = df.columns.str.replace(' ', '_')
-            cut_df = df.dropna(axis = 1, how = 'all')
-            show_df = cut_df.head()
-            csv = Element('csv_guru')
-            csv.write(show_df)
-          </py-script>
-        </div>
-      </section>
       <section id = "ISFJ">
         <h1>당신과 같은 투자대가의 포트폴리오 상위 5종목은?</h1>
         <h2>ISFJ - 워렌버핏</h2>
@@ -170,6 +136,7 @@
           <p id="csv_ISFJ"></p>
           <py-script>
             import pandas as pd
+            pd.options.display.float_format = '{:.5f}'.format
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -204,7 +171,7 @@
           <p id="csv_INFJ"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -241,7 +208,7 @@
           <p id="csv_INTJ"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -278,7 +245,7 @@
           <p id="csv_ISTP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -315,7 +282,7 @@
           <p id="csv_ISFP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -352,6 +319,7 @@
           <p id="csv_INFP"></p>
           <py-script>
             import pandas as pd
+            pd.options.display.float_format = '{:.5f}'.format
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -385,7 +353,7 @@
           <p id="csv_INTP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -422,7 +390,7 @@
           <p id="csv_ESTP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -459,7 +427,7 @@
           <p id="csv_ESFP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -496,7 +464,7 @@
           <p id="csv_ENFP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -533,7 +501,7 @@
           <p id="csv_ENTP"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -570,7 +538,7 @@
           <p id="csv_ESTJ"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -607,7 +575,7 @@
           <p id="csv_ESFJ"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -644,7 +612,7 @@
           <p id="csv_ENFJ"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
@@ -681,7 +649,7 @@
           <p id="csv_ENTJ"></p>
           <py-script>
             import pandas as pd
-
+            pd.options.display.float_format = '{:.5f}'.format
 
 
 
