@@ -5,7 +5,7 @@ const endPoint = 12;
 const select = [];
 
 function goguru(){
-  document.getElementById("ENFJ").style.display ='none';
+  document.getElementById("ENFJ").style.display ='block';
   document.getElementById("ENFP").style.display ='none';
   document.getElementById("ENTJ").style.display ='none';
   document.getElementById("ENTP").style.display ='none';
