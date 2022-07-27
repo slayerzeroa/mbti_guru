@@ -136,7 +136,6 @@
           <p id="csv_guru"></p>
           <py-script id="pyguru">
             import pandas as pd
-            df.style.hide_index()
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -156,6 +155,7 @@
 
 
             df = pd.read_csv(mbti_dir['ISFJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -172,7 +172,6 @@
           <p id="csv_ISFJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -192,6 +191,7 @@
 
 
             df = pd.read_csv(mbti_dir['ISFJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -208,7 +208,7 @@
           <p id="csv_INFJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -230,6 +230,7 @@
 
 
             df = pd.read_csv(mbti_dir['INFJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -246,7 +247,7 @@
           <p id="csv_INTJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -268,6 +269,7 @@
 
 
             df = pd.read_csv(mbti_dir['INTJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -284,7 +286,7 @@
           <p id="csv_ISTP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -306,6 +308,7 @@
 
 
             df = pd.read_csv(mbti_dir['ISTP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -322,7 +325,7 @@
           <p id="csv_ISFP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -344,6 +347,7 @@
 
 
             df = pd.read_csv(mbti_dir['ISFP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -360,7 +364,7 @@
           <p id="csv_INFP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -382,6 +386,7 @@
 
 
             df = pd.read_csv(mbti_dir['INFP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -398,7 +403,7 @@
           <p id="csv_INTP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -420,6 +425,7 @@
 
 
             df = pd.read_csv(mbti_dir['INTP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -436,7 +442,7 @@
           <p id="csv_ESTP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -458,6 +464,7 @@
 
 
             df = pd.read_csv(mbti_dir['ESTP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -474,7 +481,7 @@
           <p id="csv_ESFP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -496,6 +503,7 @@
 
 
             df = pd.read_csv(mbti_dir['ESFP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -512,7 +520,7 @@
           <p id="csv_ENFP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -534,6 +542,7 @@
 
 
             df = pd.read_csv(mbti_dir['ENFP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -550,7 +559,7 @@
           <p id="csv_ENTP"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -572,6 +581,7 @@
 
 
             df = pd.read_csv(mbti_dir['ENTP'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -588,7 +598,7 @@
           <p id="csv_ESTJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -610,6 +620,7 @@
 
 
             df = pd.read_csv(mbti_dir['ESTJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -626,7 +637,7 @@
           <p id="csv_ESFJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -648,6 +659,7 @@
 
 
             df = pd.read_csv(mbti_dir['ESFJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -664,7 +676,7 @@
           <p id="csv_ENFJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
 
 
 
@@ -686,6 +698,7 @@
 
 
             df = pd.read_csv(mbti_dir['ENFJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
@@ -702,7 +715,9 @@
           <p id="csv_ENTJ"></p>
           <py-script>
             import pandas as pd
-            df.style.hide_index()
+
+
+
 
             mbti_dir = {'ISFJ':'./berkshire_hathaway_inc.csv',
             'INFJ':'./daily_journal_corp.csv',
@@ -722,6 +737,7 @@
 
 
             df = pd.read_csv(mbti_dir['ENTJ'])
+            df.style.hide_index()
             df.columns = df.columns.str.replace(' ', '_')
             cut_df = df.dropna(axis = 1, how = 'all')
             show_df = cut_df.head()
